@@ -1,7 +1,7 @@
 FROM hseeberger/scala-sbt
 
 # Install Atlassian Plugin SDK
-ARG  SDK_VERSION=6.3.10
+ARG  SDK_VERSION=6.3.12
 
 RUN curl https://packages.atlassian.com/list/atlassian-sdk-deb/deb-archive/atlassian-plugin-sdk_${SDK_VERSION}_all.deb -O
 RUN dpkg -i ./atlassian-plugin-sdk_${SDK_VERSION}_all.deb
